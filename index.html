@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg z-3 pt-3 pb-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg" alt="" width="150">
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+                <ul class="navbar-nav navinfo">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Product
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Bonsai Workflow</a></li>
+                          <li><a class="dropdown-item" href="#">Bonsai Tax</a></li>
+                          <li><a class="dropdown-item" href="#">Bonsai Crash</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Templates
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Contract Template</a></li>
+                          <li><a class="dropdown-item" href="#">Proposal Template</a></li>
+                          <li><a class="dropdown-item" href="#">Invoice Template</a></li>
+                          <li><a class="dropdown-item" href="#">Agreement Template</a></li>
+                          <li><a class="dropdown-item" href="#">Quote Template</a></li>
+                          <li><a class="dropdown-item" href="#">Scope of work Template</a></li>
+                          <li><a class="dropdown-item" href="#">Brief Template</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  " href="#">Reviews</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item login px-2 z-3"> <a class="text-decoration-none loginbtn fw-bold" href="">LOGIN</a></li>
+                    <li class="nav-item start px-2 z-3"> <a class="text-decoration-none startbtn fw-bold" href="">START FREE</a></li>
+                </ul>
+              </div>
+          </div>
+    </nav>
+    <div class="blue-shape z-n1"></div>
+    <section class="container-fluid ">
+      <div class="container pricetitle text-center pb-5 d-flex flex-xl-row flex-sm-column justify-content-center ">
+        <span class="fs-1 fw-normal px-5 align-self-start ">Plans & Pricing</span> 
+        <div class="align-self-end pt-3 d-flex switchdiv">
+          <span id="monthlytxt" class="fs-5">MONTHLY</span>
+          <label  class="switch fs-5 mx-2 ">
+            <input type="checkbox" id="monthlyCheckbox" onchange="toggleBillingCycle()">
+            <span class="slider"></span>
+          </label> 
+          <span id="yearlytxt" class="fs-5  opacity-50">YEARLY</span>
+          <img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e9d7255d3886a6103fb12a9_FREE-text.svg" class="titleimg" alt="">
+        </div>
+      </div>
+      <div class="container plansection d-xl-flex d-block justify-content-between gap-2">
+        <div class="planbox col-xl-4 col-12 d-flex flex-column">
+          <h2>Starter</h2>
+          <span class="fs-6">Ideal for freelancers and contractors just starting out</span>
+          <div class="price d-flex ">
+            <span class="currency align-self-start">$</span> <span class="fw-bold ">24</span><span id="month" class="align-items-end month align-self-end">&nbsp/MONTH</span>
+          </div>
+          <div id="billed1" class="text-end d-none">Billed yearly</div>
+          <div class="plan-info">
+            <div class=" d-flex pt-5 pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">All Templates</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Unlimited Clients & Projects</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Invoicing & Payments</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Proposals & Contracts</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Tasks & Time Tracking</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Client CRM</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Expense Tracking</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Up to 5 Project Collaborators</div>
+          </div>
+          <div class="planbtn text-center mt-auto"><a  class="text-decoration-none text-white fw-bold" href=""> START FREE</a></div>
+        </div>
+        <div class="planbox col-xl-4 col-12  d-flex flex-column ">
+          <h2>Professional</h2>
+          <span class="fs-6">Everything a growing independent business needs to thrive.          </span>
+          <div class="price d-flex ">
+            <span class="currency align-self-start">$</span> <span class="fw-bold  ">39</span><span id="month" class="align-items-end month align-self-end">&nbsp/MONTH</span>
+          </div>
+          <div id="billed2" class="text-end d-none">Billed yearly</div>
+          <div class="plan-info">
+            <div class=" d-flex pt-5 pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Everything in Starter plus...</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Custom Branding</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Forms & Questionnaires</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Workflow Automations</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Client Portal</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">QuickBooks Integration</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Calendly Integration</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Zapier Integration</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Up to 15 Project Collaborators</div>
+
+          </div>
+          <div class="planbtn text-center mt-auto"><a  class="text-decoration-none text-white fw-bold" href=""> START FREE</a></div>
+          <div class="most-poppular text-white text-center fs-6">
+            MOST POPPULAR
+          </div>
+        </div>
+        <div class="planbox col-xl-4 col-12 d-flex flex-column ">
+          <h2>Business</h2>
+          <span class="fs-6">The perfect package for small businesses and agencies.</span>
+          <div class="price d-flex ">
+            <span class="currency align-self-start">$</span> <span class="fw-bold ">79</span><span id="month" class="align-items-end month align-self-end">&nbsp/MONTH</span>
+          </div>
+          <div id='billed3' class="text-end d-none">Billed yearly</div>
+          <div class="plan-info">
+            <div class=" d-flex pt-5 pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Everything in Starter and Professional plus...</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Subcontractor Management</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Hiring Agreement Templates (1099 contracts)</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Subcontractor Onboarding</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Talent Pool</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">3 Team Seats (additional seats $9/month)</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Accountant Access</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Connect Multiple Bank Accounts</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Unlimited Subcontractors</div>
+            <div class=" d-flex pb-3"><img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg" width="30px" class="px-2" alt="">Unlimited Project Collaborators</div>
+          </div>
+          <div class="planbtn text-center mt-auto"><a  class="text-decoration-none text-white fw-bold" href=""> START FREE</a></div>
+        </div>
+      </div>
+    </section>
+    <div class="container text-center pt-5 pb-5 mt-5 flex-column d-flex justify-content-center">
+      <h2 class="pb-5">Super charge your work with add-ons</h2>
+      <div class="w-75 align-self-center addon-box shadow d-flex pt-5 pb-5 mb-5 ">
+        <div class="px-5 col-8 text-start">
+          <h3>Collaborators</h3>
+          <p>Invite other users to specific projects for limited access and functionality.</p>
+        </div>
+        <div class="col-4 fs-1 fw-bold justify-content-center addon-price">FREE</div>
+      </div>
+      <div class="w-75 align-self-center addon-box shadow d-flex pt-5 pb-3 mb-5 ">
+        <div class="px-5 col-8 text-start">
+          <h3>Partners</h3>
+          <p>Invite other users for full account access and company management.          </p>
+        </div>
+        <div class="col-4 fs-1 fw-bold addon-price">$9
+          <p class="fs-6 fw-normal">/MONTH</p>
+        </div>
+        
+      </div>
+      <div class="w-75 align-self-center addon-box shadow d-flex pt-5 pb-3 mb-5 ">
+        <div class="px-5 col-8 text-start">
+          <h3>Bonsai Tax</h3>
+          <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+          <p style="font-size: 12px;"><a href="" class="text-decoration-none text-green fw-bold">Learn More ></a></p>
+        </div>
+        <div class="col-4 fs-1 fw-bold addon-price">$10
+          <p class="fs-6 fw-normal">/MONTH</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w-50 bglightblue container text-center pt-5 pb-4 px-5 mb-5 d-flex justify-content-center ">
+      <div class="col-10 text-start fs-1 pb-5">It’s <span class="text-green">your</span> business   <p>We’re here to help it grow.</p></div>
+      <div class="col-2 startbtndiv "><a class="text-decoration-none  startbtn fw-normal" href="">START FREE</a></div>
+    </div>
+    <div class="container pt-5 pb-5 text-center ">
+      <h2 class="text-green text-center">Frequently Asked Questions</h2>
+      <div id="showHide" class="container w-75 pt-5 text-start fqask">
+        <p  class="fw-bold fs-3 arrow-down">How does the free trial work?</p>
+        <p class="w-75" style='display: none' id="paragraph1">When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+      </div>
+      <div id="showHide2" class="container w-75 pt-2 text-start fqask">
+        <p  class="fw-bold fs-3 arrow-down">Can I change plans anytime?</p>
+        <p class="w-75" style='display: none' id="paragraph2">Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and "Subscription".</p>
+      </div>
+      <div id="showHide3" class="container w-75 pt-2 text-start fqask">
+        <p  class="fw-bold fs-3 arrow-down">How do I pause my Bonsai subscription?</p>
+        <p class="w-75" style='display: none' id="paragraph3">We totally understand that with the nature of freelancing, work ebbs and flows so you might not always need your Bonsai subscription to remain active! The good news is that you can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in to access all your documents and even continue to use our free features, like Time Tracking! In order to cancel your subscription, login to your Bonsai account..</p>
+      </div>
+      <div id="showHide4" class="container w-75 pt-2 text-start fqask">
+        <p  class="fw-bold fs-3 arrow-down">What is your refund policy?</p>
+        <p class="w-75" style='display: none' id="paragraph4">If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to both monthly and annual plans.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="container footerdiv d-flex pt-5 pb-5">
+        <div class="d-flex flex-column col-5  pt-5">
+          <h5 class="fw-bold">Product</h5>
+          <a class="text-decoration-none pt-5 text-black fw-light fs-6" href="#">Proposals</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Contracts</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Invoicing</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Client CRM</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Time Tracking</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Task Tracking</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Forms</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Accounting</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Bonsai Tax</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Bonsai Cash</a>
+          <a class="text-decoration-none pt-5 fs-6 text-green" href="#">Pricing</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Bonsai Review</a>
+        </div>
+        <div class="d-flex flex-column col-5 pt-5">
+          <h5 class="fw-bold">FREE RESOURCES</h5>
+          <a class="text-decoration-none pt-5 text-black fw-light fs-6" href="#">Freelance Resources</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Freelance Blog by Bonsai</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">How to Write a Contract</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Online Signature Maker</a>
+          <a class="text-decoration-none pt-5 text-black fw-light fs-6" href="#">Self-Employed Taxes Hub</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Self-Employed Tax Calculator</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Self-Employed Tax Deductions</a>
+          <h5 class="fw-bold pt-5">Templates</h5>
+          <div class="pt-2">
+            <span>Invoice Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <div class="pt-2">
+            <span>Proposal Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <div class="pt-2">
+            <span>Contract Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <div class="pt-2">
+            <span>Agreement Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <div class="pt-2">
+            <span>Scope of Work Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <div class="pt-2">
+            <span>Quote Templates</span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Credit Note Templates</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Estimate Templates</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Form Templates</a>
+        </div>
+        <div class="d-flex flex-column col-2 pt-5 ">
+          <h5 class="fw-bold">BONSAI</h5>
+          <a class="text-decoration-none pt-5 text-black fw-light fs-6" href="#">About</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Careers</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Support</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">LinkedIn</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Twitter</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Privacy policy</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Legal</a>
+          <a class="text-decoration-none pt-5 text-black fw-light fs-6" href="#">Affiliates</a>
+          <a class="text-decoration-none pt-2 text-black fw-light fs-6" href="#">Write for Us</a>
+          <div class="pt-5">
+            <span>Comparisons  </span>
+            <img width="14px" class="d-inline-block" src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5f5a14486154c507c79e758f_001-down-chevron.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

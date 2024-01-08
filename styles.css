@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: white;
+}
+body{
+    color: #4c525a;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: white;
+    width: 100vw;
+}
+.navinfo li{
+    float: left;
+    padding: 0 2rem 0 1rem;
+}
+.logoimg{
+    padding-left: 10rem;
+}
+.navbar-brand{
+    padding-right: 5rem;
+}
+.loginbtn{
+    padding: 10px 20px;
+    border: 1px solid green;
+    border-radius: 7px;
+    color:#00b289;
+}
+.startbtn{
+    padding: 10px 20px;
+    border: 1px solid green;
+    border-radius: 7px;
+    color:white;
+    text-wrap: nowrap;
+    background-color:#00b289;
+}
+.navinfo li:nth-child(4){
+    padding-right: 1rem;
+}
+.pricetitle{
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+.bglightblue{
+    background-color: #f2faff;
+    position: relative;
+}
+.text-green{
+    color: #00b289;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00b289;
+    transition: .4s;
+    border-radius: 34px;
+  }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+.titleimg{
+    position: absolute;
+    right: 340px;
+    top:70px;
+    left:auto;
+}
+.blue-shape {
+    position: absolute;
+    left: 50;
+    top: 0%;
+    right: -5%;
+    bottom: auto;
+    display: block;
+    width: 60vw;
+    height: 50vw;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    -webkit-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+}
+.planbox{
+    border: 1px solid gray;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+.price{
+    font-size: 62px;
+}
+.currency{
+    align-self: flex-start;
+    font-size: 40px;
+}
+.month{
+    font-size: 30px;
+}
+.plan-info{
+    border-top: 2px solid green;
+}
+.planbtn{
+    padding: 22px 25px;
+    border: 1px solid green;
+    background-color: #00b289;
+    border-radius: 6px;
+}
+.most-poppular{
+    position: absolute;
+    background-color: #00b289;
+    top: 40px;
+    right: -120px;
+    width:360px;
+    padding: 11px;
+    transform: rotate(45deg);
+}
+.fqask{
+    position: relative;
+    cursor: pointer;
+}
+.arrow-down{
+    background-image: url("https://web.archive.org/web/20221117021711im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/59f05f389cd27200014f061e_icon-expand.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 50%;
+    background-size: auto 20px;
+}
+.startbtndiv{
+    align-self: center;
+}
+@media only screen and (max-width: 1399px) {
+    .titleimg{
+        right: 250px;
+    }
+  }
+@media only screen and (max-width: 1199px) {
+
+    .startbtn{
+        padding: 10px 10px;
+    }
+    .loginbtn{
+        padding: 10px 10px;
+    }
+    .navinfo li:nth-child(4){
+        padding-right: 5px;
+    }
+    .titleimg{
+        top: 120px;
+        right: 0px;
+    }
+    .price{
+        font-size: 52px;
+        align-self: center;
+    }
+    .currency{
+        font-size: 30px;
+    }
+    .month{
+        font-size: 25px;
+    }
+    .bglightblue{
+        flex-direction: column;
+    }
+  }
+@media only screen and (max-width: 991px) {
+    .start{
+        padding: 2rem 0 0 0;
+    }
+    .login{
+        padding: 1rem 0 0 0;
+    }
+    .startbtn{
+        border: 1px solid green;
+    }
+    .titleimg{
+        right: 0;
+    }
+    .price{
+        align-self: center;
+        font-size: 42px;
+    }
+    .currency{
+        font-size: 25px;
+    }
+    .month{
+        font-size: 20px;
+    }
+    .startbtndiv{
+        align-self: flex-start;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .titleimg{
+        top: 70px;
+        right: 10px;
+    }
+    .switchdiv{
+        flex-direction:column-reverse;
+        flex-shrink: 0;
+    }
+    .addon-box{
+        flex-wrap: wrap;
+    }
+    .addon-price{
+        padding-top: 6rem;
+    }
+    .startbtn{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .bglightblue{
+        padding: 0;
+    }
+    .blue-shape{
+        display: none;
+    }
+    .footerdiv{
+        flex-direction: column;
+    }
+  }
